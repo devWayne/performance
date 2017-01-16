@@ -2,7 +2,6 @@
 
 * 体验相关标准参数
   * onload
-  * pageload
   * domready
   * ttfb
   * SpeedIndex(体验相关标准参数/SpeedIndex.md)
@@ -14,10 +13,11 @@
   * httpDNS
 
 * 图片优化
-  * webp&base64
+  * webp(图片优化/webp.md)
+  * base64
+  * SVG 
   * 后缀支持
   * 图片大小和尺寸内存、FPS和CPU的影响
-  * SVG vs iconfont
 
 
 * 懒加载
@@ -35,8 +35,6 @@
   * 数据缓存
   * manifest
 
-
-
 * 渲染性能
   * webkit页面渲染流程
   * chrome debug tool对页面渲染进行分析
@@ -49,21 +47,23 @@
   
 * nodejs前后端分离
 
-
-* 客户端crash和内存
-
-
 * hybrid
-  * 利用hybrid实现原生导航条
+  * native与webview通信
+  * jsbridge
+  * webview crash原因
+  * weex
 
-
-* 性能数据监控
-  * 内存&CPU监控
-  * fps监控
-  * 资源加载情况监控
+* pwa
+  * PWA能带来什么
 
       
 * 样式&交互&设计优化
   * 占位高度防治页面跳动
   * 定制的打底图
+
+* 性能体验数据监控
+  * 内存&CPU监控
+  * fps监控
+  * 资源加载情况监控
+
 
