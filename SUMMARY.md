@@ -1,10 +1,10 @@
 # 移动Web性能优化和极致产品体验
 
 * 体验相关标准参数
-  * onload
-  * domready
-  * ttfb
-  * SpeedIndex(体验相关标准参数/SpeedIndex.md)
+  * domready & onload
+  * [SpeedIndex](体验相关标准参数/SpeedIndex.md)
+  * 检测方法
+
 
 * 网络层优化
   * http2
@@ -13,11 +13,11 @@
   * httpDNS
 
 * 图片优化
+  * 图片对内存、FPS和CPU的影响
   * webp(图片优化/webp.md)
   * base64
   * SVG 
   * 后缀支持
-  * 图片大小和尺寸内存、FPS和CPU的影响
 
 
 * 懒加载
@@ -35,17 +35,14 @@
   * 数据缓存
   * manifest
 
-* 渲染性能
+* 页面渲染性能
   * webkit页面渲染流程
-  * chrome debug tool对页面渲染进行分析
+  * [Chrome DevTool对页面渲染进行分析](页面渲染性能/Chrome-DevTool对页面渲染进行分析.md)
   * layout & paint & composite
-  * 事件对页面的影响
+  * [阻塞页面渲染的场景](页面渲染性能/阻塞页面渲染的场景.md)
+  * 动画性能
+  * 内存泄漏
 
-* 动画性能
-  * CSS3 动画
-  * Javascript 动画
-  
-* nodejs前后端分离
 
 * hybrid
   * native与webview通信
@@ -54,14 +51,16 @@
   * weex
 
 * pwa
+  * [什么是PWA](PWA/什么是PWA.md)
   * PWA能带来什么
 
       
 * 样式&交互&设计优化
+  * nodejs前后端分离
   * 占位高度防治页面跳动
   * 定制的打底图
 
-* 性能体验数据监控
+* 建立性能体验数据监控体系
   * 内存&CPU监控
   * fps监控
   * 资源加载情况监控
