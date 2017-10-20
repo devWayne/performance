@@ -1,10 +1,13 @@
-## 官方定义
+http://blog.csdn.net/horkychen/article/details/67943963?utm_source=tuicool&utm_medium=referral
+
+## 什么是Progressive Web Apps
 
 Progressive Web Apps 是结合了 web 和 原生应用中最好功能的一种体验。对于首次访问的用户它是非常有利的, 用户可以直接在浏览器中进行访问，不需要安装应用。随着时间的推移当用户渐渐地和应用建立了联系，它将变得越来越强大。它能够快速地加载，即使在比较糟糕的网络环境下，能够推送相关消息, 也可以像原生应用那样添加至主屏，能够有全屏浏览的体验。
 
+PWA对于现有的web开发模式是颠覆性的，作为前端工程师，需要改变原有的做网页的思维模式，逐渐转变到做app的思维模式，pwa和mobile web最大的区别在于
 
 
-Progressive Web Apps 是:
+### Progressive Web Apps 的特点:
 
 - 渐进增强 - 能够让每一位用户使用，无论用户使用什么浏览器，因为它是始终以渐进增强为原则。
 - 响应式用户界面 - 适应任何环境：桌面电脑，智能手机，笔记本电脑，或者其他设备。
@@ -17,32 +20,18 @@ Progressive Web Apps 是:
 - 可安装 - 允许用户保留对他们有用的应用在主屏幕上，不需要通过应用商店。
 - 可连接性 - 通过 URL 可以轻松分享应用，不用复杂的安装即可运行。
 
-Progressive Web Apps 涉及到的相关 Web APIs：
+PWA的意义
+      Progressive Web Apps, 经过Google的大力推广, 目前已经比较流行。业界也比较关注, 有观望其发展趋势的也有已付诸实践的。我们的页面是否应该使用PWA相关技术？Google为何会大力推广PWA呢？
+      我们想分析一下PWA对Google公司的意义。PWA能作为Google力推的技术方向, 它需要得到公司的认同和支持, 首先需要符合公司的理念或者战略利益。
+      Google公司在移动端有一些具备核心竞争力的产品 Android 和 Chromium OS , 其中Android 是移动端的操作系统, 而Chromium OS则是面向未来的云操作系统。目前Android在移动端的市场份额非常大, 已远远超出iOS, 甚至已超出80%。Android现在可谓风光无限, 但它不一定能代表未来, Google也不一定会放弃“浏览器即是操作系统”的理想。Google Chrome浏览器 既可以运行在Android系统，也可以运行在Chromium OS系统。多方的统计数据显示, Google Chrome浏览器的市场份额已超越IE, 成为全球第一大浏览器。问题是, 如果没有了Web, 浏览器该怎么办? 也就没有份额可言了。如果没有了浏览器, Google搜索怎么办? Google 搜索广告收入可历年来都是Google公司的主要收入来源, 有些年份甚至超出90%。如果大部分的内容都困在超级App的孤岛, 搜索引擎也将面临巧妇难为无米之炊的困境。
+      推动Web的繁荣发展是符合Google公司的整体利益的, 当然也符合各大浏览器厂商的利益。一个开放的Web生态也能让开发者和用户受益。
+      Web 在与Native比较时, 很多时候都处于弱势, 一个比较核心的点在于用户体验上的差异。 那么, Web 和 Native是否可以拥有同样的能力, 同样的用户体验呢? 这就是PWA的意义所在, 打造与Native一致的Web体验。
+      体验一样又如何？Web就是Web，它再厉害还是不能像Native Apps那样出现在系统设置里面？ Integrating Progressive Web Apps deeply into Android 回答了这个问题，PWA应用也能出现在系统设置里面！！从Google对PWA的态度来看，只要Native Apps具备的能力，它都愿意给Web Apps开放。
 
-Cache  https://developer.mozilla.org/en-US/docs/Web/API/Cache
-CacheStorage    https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage\
-Client https://developer.mozilla.org/en-US/docs/Web/API/Client
-Clients https://developer.mozilla.org/en-US/docs/Web/API/Clients
-ExtendableEvent https://developer.mozilla.org/en-US/docs/Web/API/ExtendableEvent
-ExtendableMessageEvent https://developer.mozilla.org/en-US/docs/Web/API/ExtendableMessageEvent
-FetchEvent https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent
-InstallEvent https://developer.mozilla.org/en-US/docs/Web/API/InstallEvent
-Navigator.serviceWorker https://developer.mozilla.org/en-US/docs/Web/API/Navigator/serviceWorker
-NotificationEvent https://developer.mozilla.org/en-US/docs/Web/API/NotificationEvent
-ServiceWorker https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker
-ServiceWorkerContainer https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer
-ServiceWorkerGlobalScope https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope
-ServiceWorkerMessageEvent https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerMessageEvent
-ServiceWorkerRegistration https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration
-SyncEvent https://developer.mozilla.org/en-US/docs/Web/API/SyncEvent
-SyncManager https://developer.mozilla.org/en-US/docs/Web/API/SyncManager
-SyncRegistration https://developer.mozilla.org/en-US/docs/Web/API/SyncRegistration
-PeriodicSyncEvent https://developer.mozilla.org/en-US/docs/Web/API/PeriodicSyncEvent
-PeriodicSyncManager https://developer.mozilla.org/en-US/docs/Web/API/PeriodicSyncManager
-PeriodicSyncRegistration https://developer.mozilla.org/en-US/docs/Web/API/PeriodicSyncRegistration
-WindowClient https://developer.mozilla.org/en-US/docs/Web/API/WindowClient
-PushManager https://developer.mozilla.org/en-US/docs/Web/API/PushManager
-GlobalFetch https://developer.mozilla.org/en-US/docs/Web/API/GlobalFetch
-Request https://developer.mozilla.org/en-US/docs/Web/API/Request
-Response https://developer.mozilla.org/en-US/docs/Web/API/Response
-Body https://developer.mozilla.org/en-US/docs/Web/API/Body
+从整个技术体系上看，可以分成五个层次:
+
+PWA Features 通过标准定义，开放传播。易于各方理解和支持，特别是凝聚一些中间力量。因为Top的玩家也可以选择玩封闭的生态。
+Web Platforms (各家浏览器及WebView) Web平台的支持，才能让PWA有应用的空间。特别是进一步与OS的结合，提高了Web应用与原生应用的竞争力，才能保证Web App能够成为应用开发的选项之一。从平台的角度思考，它一定会支持多种技术方案，更多的应用形式能帮助整个应用市场活跃起来。
+组件库及工具库(Polymer等) 开发最容易纠结在库、框架、组件的选择上，因为这是实实在在的痛点。有了进一步封装的库、组件、解决方案，无论具体什么形式，它必须要简化PWA的开发，是一个可以复用的技术方案，以降低开发成本和技术风险。
+工具及支撑平台 工具则包括开发调试、检测等可以提高开发效率的工具。支撑平台则是为这个生态提供基础服务的。
+设计思想和开发模式 在一个技术生态内，对实践的指导原则可以理解对最佳实践的抽象总结，可以帮助开发者更好理解这个生态面对的问题和解决的思路。最终它会影响到工具和组件，甚至是平台和Features。
